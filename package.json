@@ -1,0 +1,88 @@
+{
+  "name": "tz",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "server-dev": "set NODE_ENV=development&& set NODE_PORT=3000&& nodemon server",
+    "server-start": "set NODE_ENV=production&& set NODE_PORT=3888&& nodemon server"
+  },
+  "dependencies": {
+    "@vuelidate/core": "^2.0.0-alpha.19",
+    "@vuelidate/validators": "^2.0.0-alpha.17",
+    "animate.css": "^4.1.1",
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.0.1",
+    "core-js": "^3.6.5",
+    "css-spinners": "^1.0.1",
+    "font-awesome": "^4.7.0",
+    "hash-generator": "^0.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "maska": "^1.4.2",
+    "module-alias": "^2.2.2",
+    "mongoose": "^5.12.10",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.6.1",
+    "normalize.css": "^8.0.1",
+    "scss-loader": "0.0.1",
+    "vue": "^3.0.0",
+    "vue-image-crop-upload": "^3.0.3",
+    "vue-router": "^4.0.8",
+    "vuex": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^7.0.0",
+    "node-sass": "^4.12.0",
+    "sass": "^1.43.2",
+    "sass-loader": "^10.2.0",
+    "vue-template-compiler": "^2.6.11",
+    "webpack-cli": "^4.9.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "@vue/standard"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "_moduleAliases": {
+    "@": "./server/src",
+    "@c": "./server/src/config",
+    "@lib": "./server/src/lib",
+    "@m": "./server/src/models",
+    "@r": "./server/src/routes",
+    "@root": "./",
+    "@files": "./files"
+  },
+  "_moduleDirectories": [
+    "node_modules_custom"
+  ],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
